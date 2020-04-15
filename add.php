@@ -15,7 +15,7 @@
         <nav>
 
             
-            <a class="butt" href="./liste.html"> LIST</a>
+            <a class="butt" href="./liste.php"> LIST</a>
             <a class="butt">ADD A TASK</a>
             <a class="butt"> REMOVE </a>
 
@@ -29,7 +29,7 @@
 
     </div>
 
-    <form action="exo2.php" method="GET" name="formulaire">
+    <form action="addtask.php" method="GET" name="formulaire">
     <div id="form">
 
         <label for="titre"> Titre: </label>

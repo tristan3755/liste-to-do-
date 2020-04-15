@@ -17,7 +17,7 @@
 
            
             <a class="butt"> LIST</a>
-            <a class="butt"  href="./add.html">ADD A TASK</a>
+            <a class="butt"  href="./add.php">ADD A TASK</a>
             <a class="butt"> REMOVE </a>
 
 
@@ -30,6 +30,34 @@
         <h1>Click on add in order to add a task</h1>
 
     </div>
+
+
+
+    <?php 
+
+
+
+
+
+
+          $file = fopen('exo.csv', 'a');
+
+          $task = fgetcsv($file);
+
+            fclose($file);
+
+
+            
+
+
+
+
+
+
+            
+?>
+
+
 
 </body>
 
