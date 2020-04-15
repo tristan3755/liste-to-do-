@@ -1,24 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+</head>
+
+<body>
+
+<h1> Tâche enregistrée</h1>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
 <?php 
 
 
 
 
-if( isset ($_GET ['titre'])){
-    echo 'Le nom de la tâche est '  .  $_GET {'titre'} . '.';
-    }
+$task= [$_GET ['titre'],$_GET ['description'],$_GET ['Date'],$_GET ['list']];
 
 
-if( isset ($_GET ['description'])){
-    echo ' Description : '  .  $_GET {'description'} . '.';
-    }
-
-    if( isset ($_GET ['Date'])){
-        echo ' A éffectuer pour le  : '  .  $_GET {'Date'} . '.';
-        }
 
 
-        if( isset ($_GET ['list'])){
-            echo ' Priorité  : '  .  $_GET {'list'};
-            }
+          $file = fopen('exo.csv', 'a');
+
+            fputcsv($file, $task);
+
+            fclose($file);
+
+            
 
 ?>
