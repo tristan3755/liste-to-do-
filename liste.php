@@ -37,24 +37,20 @@
 
 
 
-
-
-
-          $file = fopen('exo.csv', 'a');
+          $file = fopen('exo.csv', 'r');
 
           $task = fgetcsv($file);
 
             fclose($file);
 
-
             
 
 
-
-
-
-
+            for ($i = 1; $i <count($task); $i++) {
+                echo ($task);
+            }
             
+
 ?>
 
 
