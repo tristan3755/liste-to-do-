@@ -23,7 +23,9 @@
 
 
 
-$task= [$_GET ['titre'],$_GET ['description'],$_GET ['Date'],$_GET ['list']];
+$task= [$_GET ['titre'],$_GET['description'],$_GET ['Date'],$_GET['list']];
+
+
 
 
 
@@ -32,9 +34,13 @@ $task= [$_GET ['titre'],$_GET ['description'],$_GET ['Date'],$_GET ['list']];
 
             fputcsv($file, $task);
 
+
+         
+
             fclose($file);
 
-
+         
+          
             
 
 
