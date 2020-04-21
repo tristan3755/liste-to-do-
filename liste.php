@@ -87,38 +87,7 @@ fclose($file);
         
         ?>
 
-<?php 
-    /*      while
-         
-       
-          foreach($tasks as $task)
-          {
-            var_dump($task);
-          }
 
-          fclose($file);*/
-
-      
-       
-          
-         
-
-        /* for ($i = 0; $i <count($task); $i++) {
-            echo ($task);
-        }*/
-            
-       /* foreach($tasks as $task)
-        {
-          var_dump($tasks[$i]);
-        }
-         $tasks= [$_GET ['titre'],$_GET['description'],$_GET ['Date'],$_GET['list']];
-        
-        */
-
-
-
-
-        ?>
 
 </body>
 
