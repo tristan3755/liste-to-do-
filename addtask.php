@@ -23,16 +23,21 @@
 
 
 
-$task= [$_GET ['titre'],$_GET['description'],$_GET ['Date'],$_GET['list']];
+/*$task= [$_GET ['titre'],$_GET['description'],$_GET ['Date'],$_GET['list']];*/
 
+var_dump($_GET);
 
-
-
+if(!empty($_GET))
+{
 
 
           $file = fopen('exo.csv', 'a');
 
-            fputcsv($file, $task);
+            /*fputcsv($file, $task);*/
+
+            fputcsv($file, $_GET);
+
+
 
 
          
@@ -40,7 +45,7 @@ $task= [$_GET ['titre'],$_GET['description'],$_GET ['Date'],$_GET['list']];
             fclose($file);
 
          
-          
+}
             
 
 
