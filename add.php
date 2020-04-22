@@ -17,7 +17,7 @@
             
             <a class="butt" href="./liste.php"> LIST</a>
             <a class="butt">ADD A TASK</a>
-            <a class="butt"> REMOVE </a>
+            <a class="butt" href="./remove.php"> REMOVE </a>
 
 
         </nav>

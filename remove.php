@@ -16,9 +16,9 @@
 
 
            
-            <a class="butt"> LIST</a>
+            <a class="butt" href="./liste.php"> LIST</a>
             <a class="butt"  href="./add.php">ADD A TASK</a>
-            <a class="butt" href="./remove.php"> REMOVE </a>
+            <a class="butt"> REMOVE </a>
 
 
 
@@ -27,7 +27,7 @@
 
     <div class="banniere">
 
-        <h1>Liste des tâches</h1>
+        <h1>Selectionnez une tâche à supprimer</h1>
 
     </div>
 
@@ -77,7 +77,8 @@ foreach($lines as $line)
   echo '<h3>'.$line[1].'</h3>';
   echo '<p>'. "Pour la date du :".$line[2].'</p>';
   echo '<p>'. "Urgence de la tâche :". $line[3].'</p>';
-
+  echo '<input type="button" value="supprimer" class="supp">';
+  
   
  }
 

@@ -45,7 +45,7 @@ nav{
 
 
 .butt:hover{
-    color:darkblue;
+    color:red;
     cursor: pointer;
 }
 
@@ -68,6 +68,17 @@ nav{
 
 h1{
     color: whitesmoke;
+}
+
+
+h2{
+    margin-top: 80px;
+    color: #0083B0;
+    border-bottom: red solid 3px;
+    }
+
+p{
+    color: red;
 }
 
 #form{
@@ -100,3 +111,37 @@ h1{
 .dat{
     margin-top: 10px;
 }
+
+.divPhp{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 320px;
+    width: 100%;
+    margin: 0 auto;
+   
+
+}
+
+
+.supp{
+    border-radius: 20px;
+    color: white;
+    background: #00B4DB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    min-height:60px;
+    width: 10%;
+    font-size: 130%;
+}
+
+
+.supp:hover{
+    color: white;
+    background: red;
+    cursor: pointer;
+}
+
