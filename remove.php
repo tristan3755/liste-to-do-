@@ -70,6 +70,7 @@ do
 //  Tant que la fin du fichier n'est pas atteinte
 while(!$endFile);
 
+$boutonSupp = '<input type="button" value="supprimer" id="supp">';
 
 foreach($lines as $line)
 {
@@ -77,10 +78,19 @@ foreach($lines as $line)
   echo '<h3>'.$line[1].'</h3>';
   echo '<p>'. "Pour la date du :".$line[2].'</p>';
   echo '<p>'. "Urgence de la tâche :". $line[3].'</p>';
-  echo '<input type="button" value="supprimer" class="supp">';
-  
-  
+  echo '<input type="button" value="supprimer" id="supp">';
  }
+
+
+ function suppTask($boutonSupp){
+
+
+
+
+
+
+}
+
 
 
 //  Fermeture du fichier
@@ -91,7 +101,7 @@ fclose($file);
         
         
         
-        ?>
+?>
 
 </div>
 
