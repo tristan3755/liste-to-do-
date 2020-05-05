@@ -149,8 +149,10 @@ p{
     background: -webkit-linear-gradient(to right, #0083B0, #00B4DB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     min-height:40px;
-    width: 10%;
+    min-width: 10%;
     font-size: 130%;
+    text-decoration: none;
+    line-height: 180%;
 }
 
 
