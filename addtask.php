@@ -23,9 +23,9 @@
 
 
 
-/*$task= [$_GET ['titre'],$_GET['description'],$_GET ['Date'],$_GET['list']];*/
 
-var_dump($_GET);
+
+/*var_dump($_GET);*/
 
 if(!empty($_GET))
 {
