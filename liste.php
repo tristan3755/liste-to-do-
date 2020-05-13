@@ -33,7 +33,7 @@
 
 <div class="divPhp"> 
 
-    <?php 
+<?php 
 
                   
 //  Ouverture du fichier en écriture
@@ -72,7 +72,11 @@ while(!$endFile);
 
 
 foreach($lines as $line)
+
+
 {
+
+
   echo '<h2>'.$line[0].'</h2>'; 
   echo '<h3>'.$line[1].'</h3>';
   echo '<p>'. "Pour la date du :".$line[2].'</p>';
@@ -80,6 +84,8 @@ foreach($lines as $line)
 
   
  }
+
+
 
 
 //  Fermeture du fichier
@@ -90,7 +96,7 @@ fclose($file);
         
         
         
-        ?>
+?>
 
 </div>
 

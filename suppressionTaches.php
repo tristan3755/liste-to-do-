@@ -1,11 +1,15 @@
 <?php
  
+ 
+ 
      
  $file = fopen('exo.csv', 'r');  
  
 
  do
  {
+
+
    $line = fgetcsv($file);
  
    
@@ -20,6 +24,8 @@
    
      $lines[] = $line;
    }
+
+
  }
 
  while(!$endFile);
@@ -29,11 +35,12 @@
  foreach($lines as $line)
  {
 
+echo $file;
+
    
   }
  
  
-
       function unset_value() 
       { 
           unset($lines); 

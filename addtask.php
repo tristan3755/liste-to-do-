@@ -37,20 +37,9 @@ if(!empty($_GET))
 
             fputcsv($file, $_GET);
 
-
-
-
-         
-
             fclose($file);
 
          
 }
             
-
-
-        
-
-            
-
 ?>
