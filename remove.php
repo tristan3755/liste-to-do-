@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet" />
-
-
-    <title>Document</title>
-</head>
-
-<body>
-    <header>
-        <nav>
-
-
-           
-            <a class="butt" href="./liste.php"> LIST</a>
-            <a class="butt"  href="./add.php">ADD A TASK</a>
-            <a class="butt"> REMOVE </a>
-
-
-
-        </nav>
-    </header>
+<?php   include 'navBar.phtml';?>
 
     <div class="banniere">
 
@@ -82,17 +57,9 @@ foreach($lines as $line)
   
  }
 
-
-
-
 //  Fermeture du fichier
 fclose($file);
-        
-
-          
-
-        
-        
+                
 ?>
 
 </div>
