@@ -5,11 +5,11 @@ if(isset($_GET["titre"]))
    
     $tableauJson = 'tableau.json';
     $current = file_get_contents($tableauJson);
-    $GET = [];
+    $GET=[];
    
-    function suppression() 
+    if($_GET["titre"]==$tableauJson)
 {
-    unset($_GET['']);
+    unset($tableauJson['titre']);
 }
 
     $current=json_encode($GET);
