@@ -9,7 +9,7 @@ if(isset($_GET["titre"]))
    
     function suppression() 
 {
-    unset($GET['titre']);
+    unset($_GET['']);
 }
 
     $current=json_encode($GET);
