@@ -31,17 +31,13 @@ if(isset($_GET["titre"]))
 
     for ($i=0 ; $i<count($tableau);++$i)
     {
-        //on stocke ligne à ligne dans le fichier
-        if(!fputcsv($handle ,$line))
+        if($ret=="")
         {
-            $ret = "It's ko";
+            //on a eut aucune erreur
+            $ret = "J'ai bien supprimée";
         }
     }
-    if($ret=="")
-    {
-        //on a eut aucune erreur
-        $ret = "J'ai bien supprimée";
-    }
+  
     
     
 
