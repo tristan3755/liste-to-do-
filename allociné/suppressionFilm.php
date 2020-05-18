@@ -2,7 +2,7 @@
 
 if(isset($_GET["titre"]))
 {
-    //On ouvre en lecture
+   
     $tableauJson = 'tableau.json';
     $current = file_get_contents($tableauJson);
     $GET = [];
