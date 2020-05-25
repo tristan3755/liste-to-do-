@@ -1,22 +1,32 @@
 <?php
 
+
+
+//$retour="";
+
 if(isset($_GET["titre"]))
 {
-   
     $tableauJson = 'tableau.json';
     $current = file_get_contents($tableauJson);
-    $GET=[];
+    $tableau = json_decode($current,true);
    
-    if($_GET["titre"]==$tableauJson)
-{
-    unset($tableauJson['titre']);
+    
+    
+    for ($i=0 ; $i<count($tableau);++$i)
+    {
+        if($current!=$_GET["titre"])
+        {
+            //On stocke la ligne dans un tableau sauf celle qu'on veut supprimer
+            array_push ($current,$_GET);
+            
+        }
+    }
+
+
+
+   
 }
 
-    $current=json_encode($GET);
-    file_put_contents($tableauJson,$current);
 
-}  
-
-
-  
 ?>
+
